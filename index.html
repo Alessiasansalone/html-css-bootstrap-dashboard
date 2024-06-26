@@ -15,51 +15,48 @@
 
     <header class="bg-dark">
 
-        <nav class="navbar navbar-expand-lg container">
+        <nav class="navbar navbar-expand-lg">
 
-            <div class="row w-100">
+            <div class="container-fluid">
 
-                <div class="col-8 d-flex d-row w-100 align-items-center">
+                <div class="col-8 d-flex d-row w-100 justify-content-between align-items-center">
 
-                    <a class="navbar-brand text-bg-dark col-1 me-1" href="#">
-                        <img class="w-50" src="./img/duck.png" alt="">
+                    <a style="width: 70px;" class="navbar-brand" href="#">
+                        <img class="img-fluid" src="./img/duck.png" alt="">
                     </a>
 
-                    
+                    <button class="navbar-toggler border-light bg-light h-25" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-light"></span>
+                    </button>
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <li class="nav-item">
-                            <a class="nav-link active text-bg-dark" aria-current="page" href="#">Catalogo libri</a>
-                        </li>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#">Catalogo libri</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-bg-dark" href="#">Anagrafica utenti</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Anagrafica utenti</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle text-bg-dark" href="#">
-                                Storico prestiti
-                            </a>
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Storico prestiti</a>
+                            </li>
 
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="#">Help</a>
+                            </li>
+                        </ul>
 
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-                            <button class="btn btn-outline-light text-bg-dark" type="submit">Cerca</button>
+                            <button class="btn btn-outline-light" type="submit">Cerca</button>
                         </form>
-
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-    
                     </div>
-                 
                 </div>
-
-            </div>
         </nav>
     </header>
 
@@ -70,11 +67,12 @@
             <div class="col-6 fs-2 fw-normal">
                 <div>Catalogo libri</div>
             </div>
-            
-            <div class="col-6 d-flex justify-content-end">
-                <button type="button" class="btn btn-primary">Aggiungi libro</button>
-            </div>
 
+            <div class="col-6 d-flex justify-content-end">
+                <button type="button" class="btn btn-primary">
+                    <a class="nav-link text-light" href="./contacts.html">Nuovo libro</a>
+                </button>
+            </div>
         </div>
     </div>
 
